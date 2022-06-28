@@ -23,9 +23,7 @@ import { modalState, movieState } from "../atoms/modalAtom";
 import { db } from "../firebase";
 import useAuth from "../hooks/useAuth";
 import { Element, Genre, Movie } from "../typings";
-
-import _ReactPlayer, { ReactPlayerProps } from 'react-player/lazy';
-const ReactPlayer = _ReactPlayer as unknown as React.FC<ReactPlayerProps>;
+import ReactPlayer from "react-player/lazy";
 
 function Modal() {
   const [showModal, setShowModal] = useRecoilState(modalState);
